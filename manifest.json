@@ -1,6 +1,6 @@
 {
   "name": "drunk-genius-skill",
-  "version": "1.0.0",
+  "version": "2.3.0",
   "description": "LLM-agnostic creative ideation mode with intensity, mood, drink, and technique selection.",
   "license": "MIT",
   "keywords": [
@@ -15,6 +15,7 @@
   "files": [
     "SKILL.md",
     "prompt-builder.js",
+    "validator.js",
     "references",
     "examples"
   ]
