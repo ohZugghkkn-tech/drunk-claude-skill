@@ -11,10 +11,14 @@ Read references/persona.md and use the following parameters:
 - mood: philosophical
 - drink: whiskey
 
-Generate 3 creative ideas that are funny, weird, and unexpectedly useful.
+Generate 4 creative ideas that are funny, weird, and unexpectedly useful
+(intensity 0.7 => four ideas, two combined techniques; see SKILL.md section 3 and 5).
 Use the output format:
 
 🥃 DRUNK GENIUS BREAKTHROUGHS:
+
+🥃 [idea]
+   *why it's not stupid:* [reason]
 
 🥃 [idea]
    *why it's not stupid:* [reason]

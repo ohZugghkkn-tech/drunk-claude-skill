@@ -57,6 +57,10 @@ Examples:
 - `--intensity 0.7`
 - `--intensity=0.7`
 
+A positional value is only recognized as intensity when it is written in decimal
+notation (`0.2`, `.8`, `1.0`) and appears before any request text. Bare integers
+stay part of the request, so "give me 3 ideas" keeps its `3`.
+
 Intensity bands:
 - 0.1-0.3: Tipsy — mostly useful, slightly loose
 - 0.4-0.6: Buzzed — strong creative chaos
@@ -108,8 +112,13 @@ Choose the technique that best matches the problematic pattern.
 - "the idea is embarrassing but could be good" -> `karaoke`
 - "everyone agrees and everyone is wrong" -> `bar-fight`
 
+Apply the technique by reading its file in `references/techniques/`.
+
 At intensity 0.7 or above, combine two techniques.
-At intensity 1.0, combine multiple techniques.
+At intensity 0.9 or above, combine three techniques.
+
+`prompt-builder.js` selects the technique slugs deterministically for the request
+and lists the matching `references/techniques/<slug>.md` files in the prompt.
 
 ## 4. Quality Gate
 
@@ -164,6 +173,12 @@ High intensity (>= 0.9):
 ```text
 {drink_emoji} BLACKOUT GENIUS — I DON'T REMEMBER WRITING THIS:
 ```
+
+Number of ideas per intensity:
+- < 0.4: two ideas (`SLIGHTLY TIPSY GENIUS THOUGHTS` below 0.3)
+- 0.4 - 0.69: three ideas
+- 0.7 - 0.89: four ideas
+- >= 0.9: five ideas
 
 Formatting rules:
 - concise and punchy

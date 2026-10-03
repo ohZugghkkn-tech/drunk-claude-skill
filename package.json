@@ -3,14 +3,6 @@
   "version": "2.3.0",
   "description": "LLM-agnostic creative ideation mode with intensity, mood, drink, and technique selection.",
   "license": "MIT",
-  "keywords": [
-    "creative",
-    "brainstorming",
-    "ideation",
-    "llm",
-    "prompt",
-    "skill"
-  ],
   "main": "prompt-builder.js",
   "files": [
     "SKILL.md",
@@ -18,5 +10,8 @@
     "validator.js",
     "references",
     "examples"
-  ]
+  ],
+  "scripts": {
+    "test": "node --test"
+  }
 }
