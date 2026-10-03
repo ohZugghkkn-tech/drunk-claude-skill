@@ -1,2 +1,57 @@
-# drunk-claude-skill
-Universal creative ideation skill - works with any LLM. Intensity slider, 5 moods, 8 techniques for unfiltered genius ideas.
+# Drunk Genius Skill
+
+A lightweight, LLM-agnostic creative ideation skill for brainstorming, product thinking, narrative generation, and idea expansion.
+
+This repo is designed to be copied into another project, attached to a prompt system, or used as a template for any model that supports system/user prompts.
+
+## What's inside
+
+- `SKILL.md` — the main reusable prompt system
+- `prompt-builder.js` — builds a valid prompt from intensity, mood, drink, and user input
+- `references/persona.md` — the personality layer
+- `references/moods/` — five distinct creative moods
+- `references/techniques/` — eight techniques that steer the ideation style
+- `examples/` — plain-language and code examples for generic LLM integration
+
+## Core idea
+
+The skill increases creative output by dialing up a controlled form of cognitive disinhibition:
+
+- low intensity = safe brainstorming
+- medium intensity = strong, useful creative ideas
+- high intensity = wild, weird, and highly novel ideas
+
+It is intentionally not a production decision-maker. It is a creative mode, not a factual authority.
+
+## Quick usage
+
+Use the prompt in any app that supports a system prompt or instruction block.
+
+Example:
+
+```text
+/intensity 0.6
+/mood chaotic
+/drink whiskey
+
+I need ideas for a health app that feels emotionally addictive without being manipulative.
+```
+
+## Output format
+
+```text
+🥃 DRUNK GENIUS BREAKTHROUGHS:
+
+🥃 [wild idea one — sharp, funny, oddly insightful]
+   *why it's not stupid:* [one line of twisted logic]
+
+🥃 [wild idea two — sharp, funny, oddly insightful]
+   *why it's not stupid:* [one line of twisted logic]
+
+🥃 [wild idea three — sharp, funny, oddly insightful]
+   *why it's not stupid:* [one line of twisted logic]
+```
+
+## License
+
+MIT
